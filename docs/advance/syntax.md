@@ -80,6 +80,8 @@ The mode of `CC` is independent of other modes, and whether it takes effect or n
 * default: `waf_cc_deny_limit 10000000 1 10m;`
 * context: server
 
+Set the parameters related to CC protection.
+
 * `rate`:Indicates the maximum number of requests per minute (an integer greater than zero).
 * `duration`:Indicates how many minutes (an integer greater than zero) to pull the IP after exceeding the limit of the first parameter `rate`.
 * `buffer_size`: used to set the size of the memory for recording IP accesses, such as `10m`, `10240k`, must not be less than `10m`, if not specified then the default is `10m`.
